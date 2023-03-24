@@ -1,0 +1,264 @@
+.bg-image{
+    background: linear-gradient(to bottom, rgba(4,9,30,0.6) 95%, rgb(249, 246, 246) 100%), url('./image/coron4.png');
+}
+
+.destination-top{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 9em;
+}   
+
+.destination-top h1{
+    font-size: 5vw;
+}
+
+.destination-top-center{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 9em;
+}
+
+.destination-top-center h1{
+    font-size: 4vw;
+}
+
+.text-line .destination-text-line p{
+    text-indent: 0em;
+}
+
+.destination-text-line::before{
+    left: 23em;
+}
+
+.destination-text{
+    line-height: 2em;
+}
+
+.destination-content{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 9em;
+}
+
+.destination-content h2,
+.other-destination h2{
+    position: relative;
+    margin-top: 0;
+    font-size: 4vmin;
+    color: rgb(240, 95, 38);
+    font-weight: 900;
+    text-indent: 2.8em;
+}
+
+.destination-content h2::before,
+.other-destination h2::before{
+    content: '';
+    width: 2.5em;
+    height: .15em;
+    background-color: rgb(240, 95, 38);
+    display: block;
+    position: absolute;
+    bottom: .6em;
+    left: 0;
+}
+
+.destination-content p,
+.other-destination p{
+    line-height: 2em;
+    text-align: justify;
+    text-indent: 5em;
+    font-size: 1rem;
+}
+
+.destination-content-top{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+}
+
+.destination-content-left{
+    width: 50%;
+}
+
+.destination-content-img{
+    width: 100%;
+    height: 40vh;
+}
+
+.destination-content-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.destination-content-right{
+    width: 50%;
+}
+
+.destination-content-bottom{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.destination-content-bottom-img{
+    height: 30vh;
+    width: 25%;
+}
+
+.destination-content-bottom-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.other-center{
+    margin-bottom: 0;
+}
+
+.other-center p{
+    line-height: 2em;
+    margin-bottom: 3em;
+}
+
+.other-destination{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.other-destination p{
+    color: white;
+}
+
+.other-destination-background {
+    background: linear-gradient(to bottom, rgba(4,9,30,0.6) 95%, rgb(249, 246, 246) 100%), url('./image/pic3.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.other-destination-contents{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.other-destination-content{
+    width: 80%;
+    margin-bottom: 1em;
+    display: flex;
+    gap: 1em;
+    position: absolute;
+    top: 3em;
+    left: 9.5em;
+}
+
+.des-content1{
+    transition: 1s;
+}
+
+.des-content2,
+.des-content3,
+.des-content4{
+    opacity: 0;
+    transition: 1s;
+}
+
+
+.other-destination-content-left{
+    width: 45%;
+}
+
+.other-destination-content-img{
+    width: 100%;
+    height: 40vh;
+}
+
+.other-destination-content-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.other-destination-content-right{
+    width: 50%;
+}
+
+.other-destination-contents input[type="radio"]{
+    display: none;
+}
+
+.other-destination-content-right p{
+    font-size: 1.3rem;
+}
+
+.des-dots{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 20.2em;
+}
+
+.des-dots label {
+    width: 25%;
+    cursor: pointer;
+}
+
+.dots-img{
+    height: 25vh;
+    width: 100%;
+}
+
+.dots-img img{
+    height: 100%;
+    width: 100%;
+}
+
+#des1:checked ~ .des-content2,
+#des1:checked ~ .des-content3,
+#des1:checked ~ .des-content4 {
+    opacity: 0;
+}
+
+#des1:checked ~ .des-content1 {
+    opacity: 1;
+}
+
+#des2:checked ~ .des-content1,
+#des2:checked ~ .des-content3,
+#des2:checked ~ .des-content4 {
+    opacity: 0;
+}
+
+#des2:checked ~ .des-content2 {
+    opacity: 1;
+}
+
+#des3:checked ~ .des-content1,
+#des3:checked ~ .des-content2,
+#des3:checked ~ .des-content4 {
+    opacity: 0;
+}
+
+#des3:checked ~ .des-content3 {
+    opacity: 1;
+}
+
+#des4:checked ~ .des-content1,
+#des4:checked ~ .des-content2,
+#des4:checked ~ .des-content3 {
+    opacity: 0;
+}
+
+#des4:checked ~ .des-content4 {
+    opacity: 1;
+}
