@@ -32,7 +32,7 @@
 }
 
 .destination-text-line::before{
-    left: 23em;
+    left: 25.5em;
 }
 
 .destination-text{
@@ -43,28 +43,32 @@
     width: 80%;
     margin: 0 auto;
     margin-bottom: 9em;
-}
-
-.destination-content h2,
-.other-destination h2{
     position: relative;
-    margin-top: 0;
-    font-size: 4vmin;
-    color: rgb(240, 95, 38);
-    font-weight: 900;
-    text-indent: 2.8em;
 }
 
-.destination-content h2::before,
-.other-destination h2::before{
-    content: '';
-    width: 2.5em;
-    height: .15em;
-    background-color: rgb(240, 95, 38);
-    display: block;
+
+
+.destination-content:hover .bg-destination-logo{
+    opacity: 0.03;
+}
+
+.bg-destination-logo{
     position: absolute;
-    bottom: .6em;
-    left: 0;
+    z-index: -1;
+    opacity: 0;
+    right: -25em;
+    top: -6em;
+    height: 50em;
+    width: 55em;
+    transition: 1s ease;
+}
+
+.puerto-logo{
+    height: 48em;
+}
+
+.bg-logo-right{
+    left: -25em;
 }
 
 .destination-content p,
@@ -88,16 +92,41 @@
 .destination-content-img{
     width: 100%;
     height: 40vh;
+    overflow: hidden;
 }
 
 .destination-content-img img{
     width: 100%;
     height: 100%;
+    transition: .5s;
+
+}
+
+.destination-content-img img:hover{
+    transform: scale(1.03);
 }
 
 .destination-content-right{
     width: 50%;
 }
+
+.destination-content-title{
+    display: flex;
+    align-items: center;
+}
+
+.destination-content-title h2{
+    font-size: 2rem;
+    margin: 0;
+    margin-left: .4em;
+}
+
+.content-title-logo{
+    height: 5em;
+    height: 5em;
+}
+
+
 
 .destination-content-bottom{
     width: 100%;
@@ -109,11 +138,17 @@
 .destination-content-bottom-img{
     height: 30vh;
     width: 25%;
+    overflow: hidden;
 }
 
 .destination-content-bottom-img img{
     width: 100%;
     height: 100%;
+    transition: 0.5s ease;
+}
+
+.destination-content-bottom-img img:hover{
+    transform: scale(1.03);
 }
 
 .other-center{
@@ -199,6 +234,26 @@
 
 .other-destination-content-right p{
     font-size: 1.3rem;
+}
+
+.other-destination h2{
+    position: relative;
+    margin-top: 0;
+    font-size: 4vmin;
+    color: rgb(240, 95, 38);
+    font-weight: 900;
+    text-indent: 2.8em;
+}
+
+.other-destination h2::before{
+    content: '';
+    width: 2.5em;
+    height: .15em;
+    background-color: rgb(240, 95, 38);
+    display: block;
+    position: absolute;
+    bottom: .6em;
+    left: 0;
 }
 
 .des-dots{

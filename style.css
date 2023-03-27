@@ -29,17 +29,22 @@ img{
 
 .top-header {
     width: 100%;
-    height: 5em;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 32em;
     position: fixed;
     z-index: 999;
-    border: 1px solid white;
-    box-shadow: 0 0 10px rgba(36, 34, 34,0.1);
-    background-color: white;
-    color: black;
+    /* border: 1px solid rgba(rgb(12, 12, 12), black, black, 1); */
+    box-shadow: 0 0 10px rgba(36, 34, 34,0.3);
+    background-color: whitesmoke;
+}
+
+.top-header-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: .3em 0;
+    margin: 0 auto;
 }
 
 .top-header ul{
@@ -89,8 +94,8 @@ img{
 }
 
 .logo-icon{
-    width: 4em;
-    height:4em;
+    width: 3.5em;
+    height:3.5em;
 }
 
 .logo-icon img{
@@ -354,7 +359,8 @@ img{
 }
 
 .about-palawan-img{
-    width: 50%;
+
+    width: 60%;
     height: 70vh;
     text-align: center;
 }
@@ -434,10 +440,6 @@ img{
 .palawan-place-img img{
     width: 100%;
     height: 100%;
-}
-
-.palawan-place:hover{
-    transform: scale(1.01);
 }
 
 .palawan-place button{
@@ -732,27 +734,27 @@ img{
 }
 
 .seventh-content-right1::before{
-    background: url('./image/peacock.png') no-repeat center;
+    background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.6)), url('./image/peacock.png') no-repeat center;
     background-size: cover;
 }
 
 .seventh-content-right2::before{
-    background: url('./image/mousedeer.png') no-repeat center;
+    background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.6)), url('./image/mousedeer.png') no-repeat center;
     background-size: cover;
 }
 
 .seventh-content-right3::before{
-    background: url('./image/pitcher.png') no-repeat center;
+    background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.6)), url('./image/pitcher.png') no-repeat center;
     background-size: cover;
 }
 
 .seventh-content-right4::before{
-    background: url('./image/sea.png') no-repeat center;
+    background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.6)), url('./image/sea.png') no-repeat center;
     background-size: cover;
 }
 
 .seventh-content-right5::before{
-    background: url('./image/balayong.png') no-repeat center;
+    background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.6)), url('./image/balayong.png') no-repeat center;
     background-size: cover;
 }
 
@@ -912,14 +914,108 @@ img{
 
 footer{
     width: 100%;
-    height: 8em;
+    height: 25em;
     background-color: rgb(56, 56, 56);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     color: white;
     margin-top: 9em;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
+
+.footer-top{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 40% 1fr;
+    align-items: start;
+    margin-bottom: 4em;
+}
+
+footer h2{
+    margin-top: 0;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.footer-left p{
+    margin-bottom: 2em;
+}
+
+.footer-center{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-center h2{
+    margin-bottom: 1.5em;
+}
+
+.footer-page ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-page ul li{
+    margin-bottom: 1.5em;
+}
+
+.footer-page ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: rgb(240, 95, 38);
+    display: block;
+    margin-top: 3px;
+    transition: 0.15s;
+}
+
+.footer-page ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+.footer-right{
+    display: flex;
+    justify-content: right;
+}
+
+.footer-right a{
+    transition: .5s;
+}
+
+.footer-right a:hover{
+    opacity: 0.7;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.footer-bottom{
+    background-color: rgb(13, 14, 18) ;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+}
+
+.footer-bottom-content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+
+}
+
 
   
 /* animations */
@@ -927,18 +1023,18 @@ footer{
     0% {
       left: 0;
     }
-    20% { /* changed from 33.33% to 20% */
+    20% { 
       left: 0;
     }
-    25% { /* changed from 33.33% to 20% */
+    25% { 
       left: -100%;
     }
   
-    45% { /* changed from 66.66% to 45% */
+    45% { 
       left: -100%;
     }
   
-    50% { /* changed from 66.66% to 45% */
+    50% { 
       left: -200%;
     }
     
