@@ -28,7 +28,7 @@ img{
 }
 
 .top-header {
-    width: 100%;
+    width: 100svw;
     display: flex;
     align-items: center;
     position: fixed;
@@ -98,10 +98,6 @@ img{
     height:3.5em;
 }
 
-.logo-icon img{
-    width: 100%;
-    height: 100%;
-}
 
 .bottom-header{
     width: 80%;
@@ -159,7 +155,7 @@ img{
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     height: 80vh;
     margin: 0 auto;
     display: flex;
@@ -170,33 +166,36 @@ img{
 }
 
 .content1, .content2{
-    width: 70%;
+    width: 100%;
     text-align: center;
     transition: 1s;
     position: absolute;
     margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .content1::before,
 .content2::before{
     content: '';
-    width: 100vw;
+    width: 100%;
     height: 95vh;
     position: absolute;
     top: -10em;
-    left: -21em;
+    left: 0;
     z-index: -1;
 
 }
 
 .content1::before{
-    background: linear-gradient(to bottom, rgba(4,9,30,0.6) 95%, rgb(249, 246, 246) 100%), url('./image/bg.png') no-repeat center;
+    background: linear-gradient(to bottom, rgba(4,9,30,0.6) 95%, rgb(249, 246, 246) 100%), url('./images/bg.png') no-repeat center;
     background-size: cover;
 }
 
 .content2::before{
-    background: linear-gradient(to bottom, rgba(4,9,30,0.6) 95%, rgb(249, 246, 246) 100%), url('./image/pic1.png') no-repeat center;
+    background: linear-gradient(to bottom, rgba(4,9,30,0.6) 95%, rgb(249, 246, 246) 100%), url('./images/pic1.png') no-repeat center;
     background-size: cover;
 }
 
@@ -220,7 +219,7 @@ img{
 }
 
 .title{
-    width: 100%;
+    width: 80%;
     text-align: center;
     line-height: 2em;
 }
@@ -269,6 +268,7 @@ img{
     font-size: 2.5vmin;
     line-height: 1.5em;
     margin-bottom: 2em;
+    width: 50%;
 }
 
 .container input[type="radio"]{
@@ -280,9 +280,9 @@ img{
     justify-content: center;
     margin: 5px;
     position: absolute;
-    top: 41.5em;
-    right: 50%;
-    transform: translateX(50%);
+    bottom: -5em;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 3;
 }
 
@@ -485,7 +485,7 @@ img{
   }
   
 .forth-container-background {
-    background: linear-gradient(to bottom, rgba(4,9,30,0.6) 95%, rgb(249, 246, 246) 100%), url('./image/pic3.png');
+    background: linear-gradient(to bottom, rgba(4,9,30,0.6) 95%, rgb(249, 246, 246) 100%), url('./images/pic3.png');
     background-size: cover;
     position: absolute;
     top: 0;
@@ -508,6 +508,10 @@ img{
 
 .forth-content-left{
     width: 50%;
+}
+
+.forth-content-img{
+    height: 45vh;
 }
 
 .forth-content-right{
@@ -545,13 +549,13 @@ img{
     text-indent: 5em;
 }
 
-.fifth-left-image{
+.fifth-left-images{
     width: 100%;
     height: 20em;
     margin-top: 2em;
 }
 
-.fifth-left-image img{
+.fifth-left-images img{
     width: 100%;
     height: 100%;
 }
@@ -560,27 +564,27 @@ img{
     width: 60%;
 }
 
-.fifth-right-top-image{
+.fifth-right-top-images{
     width: 100%;
     display: flex;
     gap: 2em;
 }
 
-.fifth-top-image{
+.fifth-top-images{
     width: 50%;
     height: 15em;
     margin-bottom: 2em;
 }
 
 
-.fifth-right-image{
+.fifth-right-images{
     width: 100%;
     height: 24em;
 }
 
 
-.fifth-top-image img,
-.fifth-right-image img{
+.fifth-top-images img,
+.fifth-right-images img{
     width: 100%;
     height: 100%;
 }
@@ -590,6 +594,7 @@ img{
     width: 80%;
     margin: 0 auto;
     margin-top: 12em;
+
 }
 
 .sixth-container-content{
@@ -616,7 +621,7 @@ img{
 
 .sixth-left-img{
     width: 50%;
-    height: 32vh;
+    height: 30vh;
 }
 
 .sixth-content-right{
@@ -637,11 +642,11 @@ img{
 .sixth-right-content-img{
     display: flex;
     gap: 2em;
+    height: 66vh;
 }
 
 .sixth-right-img-left{
     width: 50%;
-    height: 68.5vh;
 }
 
 .sixth-right-img-right{
@@ -652,7 +657,7 @@ img{
 }
 
 .sixth-right-img{
-    height: 32vh;
+    height: 31vh;
 }
 
 /* Seventh Container */
@@ -660,6 +665,7 @@ img{
     width: 80%;
     margin: 0 auto;
     margin-top: 12em;
+    height: 65vh;
 }
 
 .seventh-container-content{
@@ -698,9 +704,9 @@ img{
     justify-content: center;
     margin: 5px;
     position: absolute;
-    bottom: -6em;
-    left: 45em;
-    transform: translateX(50%);
+    bottom: 1.5em;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 3;
 }
 
@@ -734,27 +740,27 @@ img{
 }
 
 .seventh-content-right1::before{
-    background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.6)), url('./image/peacock.png') no-repeat center;
+    background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.6)), url('./images/peacock.png') no-repeat center;
     background-size: cover;
 }
 
 .seventh-content-right2::before{
-    background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.6)), url('./image/mousedeer.png') no-repeat center;
+    background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.6)), url('./images/mousedeer.png') no-repeat center;
     background-size: cover;
 }
 
 .seventh-content-right3::before{
-    background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.6)), url('./image/pitcher.png') no-repeat center;
+    background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.6)), url('./images/pitcher.png') no-repeat center;
     background-size: cover;
 }
 
 .seventh-content-right4::before{
-    background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.6)), url('./image/sea.png') no-repeat center;
+    background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.6)), url('./images/sea.png') no-repeat center;
     background-size: cover;
 }
 
 .seventh-content-right5::before{
-    background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.6)), url('./image/balayong.png') no-repeat center;
+    background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.6)), url('./images/balayong.png') no-repeat center;
     background-size: cover;
 }
 
@@ -830,17 +836,23 @@ img{
 .testimonial{
     width: 60%;
     margin: 0 auto;
-    text-align: center;
-    margin-top: 18em;
+    margin-top: 12em;
 }
 
-.testimonial .text-line::before{
-    left: 25.5em;
+.text-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.test-text-line::before{
+    top: 1.5em;
 }
 
 .testimonial .testimonial-description{
     line-height: 2em;
     margin-bottom: 3em;
+    text-align: center;
 }
 
 .eight-container figure {
@@ -853,7 +865,7 @@ img{
 }
   
 .eight-container-background {
-    background: linear-gradient(to bottom, rgba(4,9,30,0.6) 95%, rgb(249, 246, 246) 100%), url('./image/coron1.png');
+    background: linear-gradient(to bottom, rgba(4,9,30,0.6) 95%, rgb(249, 246, 246) 100%), url('./images/coron1.png');
     background-size: cover;
     position: absolute;
     top: 0;

@@ -1,5 +1,5 @@
-.bg-image{
-    background: linear-gradient(to bottom, rgba(4,9,30,0.6) 95%, rgb(249, 246, 246) 100%), url('./image/coron4.png');
+.bg-images{
+    background: linear-gradient(to bottom, rgba(4,9,30,0.6) 95%, rgb(249, 246, 246) 100%), url('./images/coron4.png');
 }
 
 .destination-top{
@@ -16,14 +16,9 @@
     font-size: 5vw;
 }
 
-.destination-top-center{
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 9em;
-}
 
-.destination-top-center h1{
+
+.text-top h1{
     font-size: 4vw;
 }
 
@@ -31,12 +26,12 @@
     text-indent: 0em;
 }
 
-.destination-text-line::before{
-    left: 25.5em;
-}
 
 .destination-text{
     line-height: 2em;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 6em;
 }
 
 .destination-content{
@@ -153,6 +148,9 @@
 
 .other-center{
     margin-bottom: 0;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .other-center p{
@@ -173,7 +171,7 @@
 }
 
 .other-destination-background {
-    background: linear-gradient(to bottom, rgba(4,9,30,0.6) 95%, rgb(249, 246, 246) 100%), url('./image/pic3.png');
+    background: linear-gradient(to bottom, rgba(4,9,30,0.6) 95%, rgb(249, 246, 246) 100%), url('./images/pic3.png');
     background-size: cover;
     position: absolute;
     top: 0;
